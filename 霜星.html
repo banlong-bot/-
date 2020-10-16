@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>霜星</title>
+    <style>
+        * {
+            margin: 0 padding: 0;
+        }
+        
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .main {
+            width: 100%;
+            height: 100%;
+            background: url("SharedScreenshot.png") no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        
+        .loginframe {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            border-radius: 10px;
+            padding: 50px 0;
+            box-sizing: border-box;
+            box-shadow: 0 0 5px 5px rgb(93, 121, 158);
+            background: rgba(13, 22, 51, 0.5);
+        }
+        
+        .loginframe>div {
+            width: 350px;
+            height: 50px;
+            margin: 40px auto;
+            color: pink;
+        }
+        
+        .loginframe>p {
+            text-align: center;
+            color: skyblue;
+            font-size: 25px;
+        }
+        
+        .loginframe>div>span {
+            display: inline-block;
+            cursor: pointer;
+        }
+        
+        .loginframe>div input {
+            width: 100%;
+            height: 30px;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+        }
+        
+        .enterBut {
+            background: rgb(135, 170, 235);
+            color: greenyellow;
+            border: 1px solid rgb(107, 154, 201);
+            transition-duration: 1s;
+            /*过渡时间*/
+            border-radius: 12px;
+            padding: 13px 18px;
+            margin-top: 20px;
+            outline-style: none;
+            /*去除点击时外部框线*/
+        }
+        
+        .enterBut:hover {
+            background: yellow;
+            color: magenta;
+            transition-duration: 1s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="loginframe"> <audio controls>
+            <source src="火地.mp3" />
+            <source src="mysong.ogg" />
+            <!-- alternate content for unsupported case, maybe Flash, etc. -->
+            Download <a href="火地.mp3">mysong.ogg</a> or <a href="mysong.mp3">mysong.mp3</a>
+        </audio>
+            <p class="logintitle"><strong>loign</strong></p>
+            <div class="user">
+                <label>
+    <!--占位-->
+    <span></span>
+    <span>用户名</span>
+    <input type="text" placeholder="UserName">
+</label>
+
+            </div>
+
+            <div class="password">
+                <label>
+        <!--占位-->
+        <span></span>
+        <span>密码</span>
+        <input type="password" placeholder="Password">
+    </label>
+            </div>
+            <div class="enterBut">
+                <a href="https://www.bilibili.com/video/BV19t4y197ym?from=search&seid=13872752171721896619"><span>登入</span></a>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
